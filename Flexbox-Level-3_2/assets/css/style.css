@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(./../fonts/Lato/Lato-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-background: #d9e8e5;
+  --color-grey: rgba(0, 0, 0, 0.8);
+  font-family: "Lato-Regular";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =============== NAVBAR ================= */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 400;
+  gap: 12px;
+  margin-right: 33px;
+  align-items: center;
+}
+
+.logo img {
+  width: 22px;
+  height: 22px;
+}
+
+header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding-top: 5px;
+}
+
+/* nav ul:nth-of-type(2) {
+  flex-grow: 1;
+  margin-left: auto;
+  justify-content: flex-end;
+} */
+
+/* nav ul li:nth-of-type(5) {
+  margin-left: 1;
+  background-color: red;
+} */
+
+/* =========== Gallery ============= */
+
+.rings {
+  background-color: var(--color-background);
+  height: 100vh;
+}
+
+.rings h1 {
+  font-size: 1.5rem;
+  padding-top: 100px;
+  padding-left: 160px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 20px;
+  justify-content: center;
+}

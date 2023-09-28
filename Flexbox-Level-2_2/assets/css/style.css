@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(./../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-logo: #666;
+  --color-logo-hover: #333;
+  --color-menue: #333;
+  --color-menue-hover: #337ab7;
+  font-family: "Raleway";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============ HEADER ================== */
+
+header {
+  height: 76px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--color-logo);
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-inline: 186px;
+}
+
+header nav > a {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+header nav > a:hover {
+  text-shadow: 0px 0px 1px var(--color-logo-hover);
+}
+
+header nav ul {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  margin-left: 350px;
+}
+
+header nav ul li:hover {
+  text-shadow: 0px 0px 1px var(--color-menue-hover);
+}

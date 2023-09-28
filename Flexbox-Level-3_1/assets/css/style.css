@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(./../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url(./../fonts/Raleway-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-logo: #666;
+  --color-logo-hover: #333;
+  --color-menue: #333;
+  --color-menue-hover: #337ab7;
+  --color-primary: #fff;
+  --color-secondary: #745cf9;
+  font-family: "Raleway";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============ HEADER ================== */
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 186px;
+  height: 76px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--color-logo);
+  padding: 20px;
+}
+
+header nav > a {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+header nav > a:hover {
+  text-shadow: 0px 0px 1px var(--color-logo-hover);
+}
+
+header nav ul {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  color: var(--color-menue);
+}
+
+header nav ul li:hover {
+  text-shadow: 0px 0px 1px var(--color-menue-hover);
+}
+
+/* ======== BUTTON ======= */
+
+.btn {
+  text-transform: uppercase;
+  padding-block: 0.9375rem;
+  padding-inline: 3.75rem;
+  border: 2px solid var(--color-primary);
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-menue);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: #644bf4;
+  color: white;
+}
+
+/* ======== HERO SECTION =========== */
+
+.hero {
+  background: url(./../img/background.png) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-family: "Raleway-Regular";
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-size: 3.75rem;
+  padding-bottom: 25px;
+}
+
+.hero__button {
+  display: flex;
+  gap: 10px;
+  margin-top: 36px;
+}
